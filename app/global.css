@@ -1,0 +1,190 @@
+/* General chat window layout */
+.chat-toggle-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.chat-toggle-btn.open {
+    background-color: #dc3545; /* Red for closing */
+}
+
+/* Chat window container */
+.chat-window {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 350px;
+    max-height: 450px;
+    background-color: #fff;
+    border-top-left-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+    animation: fadeInUp 0.5s ease-in-out;
+}
+
+/* Close button inside the chat window */
+.close-chat-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #333;
+}
+
+/* Chat messages container */
+.chat-body {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;  /* Ensure the messages stack vertically */
+    gap: 10px;  /* Add space between messages */
+}
+
+/* Message bubbles */
+.bubble {
+    max-width: 80%;
+    padding: 10px 15px;
+    margin: 5px 0;
+    border-radius: 20px;
+    font-size: 14px;
+    line-height: 1.5;
+    word-wrap: break-word;
+    clear: both;
+    display: block;  /* Make sure bubbles are block elements */
+}
+
+.user {
+    background-color: #007bff;
+    color: white;
+    margin-left: auto;
+    border-bottom-left-radius: 0;
+    border-radius: 20px 20px 0 20px;  /* Make sure the user bubble has rounded corners */
+}
+
+.assistant {
+    background-color: #f1f1f1;
+    color: #333;
+    margin-right: auto;
+    border-bottom-right-radius: 0;
+    border-radius: 20px 20px 20px 0;  /* Make sure the assistant bubble has rounded corners */
+}
+
+.starter-text {
+    font-size: 18px;
+    color: #555;
+    text-align: center;
+}
+
+/* Input form */
+.input-form {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 10px;
+}
+
+.question-box {
+    width: 85%;
+    padding: 12px;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    font-size: 14px;
+    outline: none;
+}
+
+.send-btn {
+    background-color: #007bff;
+    border: none;
+    padding: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.send-btn:hover {
+    background-color: #0056b3;
+}
+
+input:focus {
+    border-color: #007bff;
+}
+
+/* Populated messages with scroll */
+.populated {
+    height: 330px;
+    overflow-y: scroll;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Prompt Suggestions Row */
+.prompt-suggestion-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;  /* Space between buttons */
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Individual Prompt Suggestion Button */
+.prompt-suggestion-row button {
+    background-color: #007bff; /* Blue background */
+    color: white;
+    border: none;
+    border-radius: 30px;  /* Rounded corners for buttons */
+    padding: 12px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;  /* Smooth transition for hover effects */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center;
+    min-width: 180px;  /* Set a minimum width for the buttons */
+    max-width: 250px;  /* Limit the maximum width for consistency */
+    word-wrap: break-word;  /* Ensure text wraps inside the button */
+}
+
+/* Hover effect */
+.prompt-suggestion-row button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-3px); /* Slight lift effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);  /* Enhanced shadow on hover */
+}
+
+/* Focus effect */
+.prompt-suggestion-row button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.4); /* Blue outline when focused */
+}
+
+/* Disabled Button */
+.prompt-suggestion-row button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    box-shadow: none;
+}

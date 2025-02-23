@@ -1,0 +1,89 @@
+Q: What is Kaleem?
+A: Kaleem is an AI-powered customer service platform that helps businesses automate customer support, reduce response time, and improve customer satisfaction through AI-driven interactions.
+
+Q: Who can use Kaleem?
+A: Kaleem is designed for eCommerce businesses and SaaS companies, from SMEs to large enterprises, looking to optimize customer support and reduce operational costs.
+
+Q: How does Kaleem work?
+A: Kaleem integrates with your WhatsApp and live chat, understands customer queries using AI, and provides instant, accurate responses. It also escalates complex issues to human agents when needed.
+
+Q: What subscription plans are available?
+A: Currently, Kaleem offers a Pro Plan, which includes a fixed monthly usage limit. After reaching the limit, a pay-as-you-go model applies for additional usage.
+
+Q: Does Kaleem require coding knowledge to set up?
+A: No, Kaleem is a no-code platform. Business owners and support teams can set it up easily without any technical expertise.
+
+Q: Can Kaleem handle multiple languages?
+A: Yes! Kaleem supports multiple languages, allowing businesses to serve customers globally.
+
+Q: What channels does Kaleem integrate with?
+A: Currently, Kaleem integrates with WhatsApp and live chat, ensuring seamless customer interactions on these platforms.
+
+Q: How does Kaleem ensure data security?
+A: Kaleem follows strict security protocols with encrypted communication, role-based access controls, and compliance with GDPR and industry standards.
+
+Q: Can I train Kaleem with my business-specific knowledge?
+A: Kaleem does not require manual training. Instead, it uses Retrieval-Augmented Generation (RAG) to pull answers from your business data, ensuring accurate and up-to-date responses.
+
+Q: How does Kaleem handle complex customer issues?
+A: When Kaleem detects a complex query, it automatically escalates it to a human agent or schedules a follow-up, ensuring a smooth customer experience.
+
+Q: What happens if I exceed my usage limits?
+A: Once you exceed your monthly limits, you will be charged on a pay-as-you-go basis for additional usage.
+
+Q: Can multiple team members use Kaleem?
+A: Yes! Kaleem allows multiple users to manage and monitor customer interactions, with different roles and permissions for admins, managers, and support agents.
+
+Q: How does Kaleem improve over time?
+A: Kaleem’s AI continuously learns from customer interactions and uses your existing business data to improve response accuracy and efficiency.
+
+Q: Can I integrate Kaleem with my CRM or ticketing system?
+A: Kaleem does not offer direct integrations at the moment, but we plan to add support for CRM and ticketing system integrations in the future.
+
+Q: How can I get started with Kaleem?
+A: You can sign up on our website, choose the Pro Plan, and set up Kaleem in minutes. For large businesses, we also offer personalized onboarding assistance.
+
+Q: ما هو كليم؟
+A: كليم هو منصة خدمة العملاء المدعومة بالذكاء الاصطناعي التي تساعد الشركات على أتمتة دعم العملاء، وتقليل وقت الاستجابة، وتحسين رضا العملاء من خلال التفاعلات المدفوعة بالذكاء الاصطناعي.
+
+Q: من يمكنه استخدام كليم؟
+A: كليم تم تصميمه للأعمال التجارية في التجارة الإلكترونية والشركات التي تقدم البرمجيات كخدمة (SaaS)، بدءًا من الشركات الصغيرة والمتوسطة إلى الشركات الكبيرة، التي تسعى لتحسين دعم العملاء وتقليل التكاليف التشغيلية.
+
+Q: كيف يعمل كليم؟
+A: كليم يدمج مع واتساب والدردشة المباشرة، ويفهم استفسارات العملاء باستخدام الذكاء الاصطناعي، ويقدم ردودًا فورية ودقيقة. كما يقوم بتصعيد القضايا المعقدة إلى الوكلاء البشريين عند الحاجة.
+
+Q: ما هي خطط الاشتراك المتاحة؟
+A: حاليًا، يقدم كليم خطة Pro التي تشمل حدًا شهريًا ثابتًا لاستخدام الخدمة. بعد الوصول إلى هذا الحد، يتم تطبيق نموذج الدفع حسب الاستخدام مقابل الاستخدام الإضافي.
+
+Q: هل يتطلب إعداد كليم معرفة بالبرمجة؟
+A: لا، كليم هو منصة بدون رمز (No-code). يمكن لمالكي الأعمال وفرق الدعم إعدادها بسهولة دون الحاجة إلى خبرة تقنية.
+
+Q: هل يمكن لكليم التعامل مع عدة لغات؟
+A: نعم! كليم يدعم العديد من اللغات، مما يسمح للشركات بتقديم الخدمة للعملاء على مستوى العالم.
+
+Q: مع أي قنوات يمكن لكليم التكامل؟
+A: حاليًا، يدمج كليم مع واتساب والدردشة المباشرة، مما يضمن تفاعلات سلسة للعملاء عبر هذه المنصات.
+
+Q: كيف يضمن كليم أمان البيانات؟
+A: يتبع كليم بروتوكولات أمان صارمة مع تشفير الاتصالات، والتحكم في الوصول بناءً على الأدوار، والامتثال للوائح GDPR والمعايير الصناعية.
+
+Q: هل يمكنني تدريب كليم باستخدام معرفتي الخاصة بالأعمال؟
+A: لا يتطلب كليم تدريبًا يدويًا. بدلاً من ذلك، يستخدم كليم تقنية "استرجاع-مدعوم بالجيل" (RAG) لاستخراج الإجابات من بيانات أعمالك، مما يضمن استجابات دقيقة ومحدثة.
+
+Q: كيف يتعامل كليم مع القضايا المعقدة للعملاء؟
+A: عندما يكتشف كليم استفسارًا معقدًا، فإنه يقوم تلقائيًا بتصعيده إلى وكيل بشري أو جدولة متابعة لضمان تجربة سلسة للعملاء.
+
+Q: ماذا يحدث إذا تجاوزت حدود الاستخدام الخاصة بي؟
+A: بمجرد تجاوزك للحدود الشهرية، ستتم محاسبتك على أساس الدفع حسب الاستخدام مقابل الاستخدام الإضافي.
+
+Q: هل يمكن لعدة أعضاء من الفريق استخدام كليم؟
+A: نعم! يتيح كليم لعدة مستخدمين إدارة ومراقبة التفاعلات مع العملاء، مع تحديد أدوار وصلاحيات مختلفة للمسؤولين والمديرين ووكلاء الدعم.
+
+Q: كيف يتحسن كليم مع مرور الوقت؟
+A: يتعلم الذكاء الاصطناعي في كليم باستمرار من التفاعلات مع العملاء ويستخدم بيانات الأعمال الحالية لتحسين دقة وكفاءة الاستجابة.
+
+Q: هل يمكنني تكامل كليم مع نظام CRM أو نظام التذاكر؟
+A: لا يقدم كليم تكاملات مباشرة في الوقت الحالي، ولكننا نخطط لإضافة دعم لتكاملات مع أنظمة CRM ونظام التذاكر في المستقبل.
+
+Q: كيف يمكنني البدء باستخدام كليم؟
+A: يمكنك التسجيل عبر موقعنا الإلكتروني، واختيار خطة Pro، وإعداد كليم في دقائق. بالنسبة للأعمال الكبيرة، نقدم أيضًا مساعدة مخصصة في عملية التفعيل.
