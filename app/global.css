@@ -1,190 +1,392 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 142 31% 63%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 142 31% 63%;
+
+    --radius: 0.5rem;
+
+    /* Brand Colors */
+    --brand-green: #00b16a;
+    --brand-dark: #2c2d2f;
+
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 222.2 84% 4.9%;
+    --sidebar-accent: 210 40% 96.1%;
+    --sidebar-accent-foreground: 222.2 47.4% 11.2%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 142 31% 63%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 142 31% 63%;
+
+    --sidebar-background: 222.2 84% 4.9%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-accent: 217.2 32.6% 17.5%;
+    --sidebar-accent-foreground: 210 40% 98%;
+
+    --brand-green: #00b16a;
+    --brand-dark: #2c2d2f;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 142 31% 63%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 142 31% 63%;
+
+    --radius: 0.5rem;
+
+    /* Brand Colors */
+    --brand-green: #00b16a;
+    --brand-dark: #2c2d2f;
+
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 222.2 84% 4.9%;
+    --sidebar-accent: 210 40% 96.1%;
+    --sidebar-accent-foreground: 222.2 47.4% 11.2%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 142 31% 63%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 142 31% 63%;
+
+    --sidebar-background: 222.2 84% 4.9%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-accent: 217.2 32.6% 17.5%;
+    --sidebar-accent-foreground: 210 40% 98%;
+
+    --brand-green: #00b16a;
+    --brand-dark: #2c2d2f;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+
 /* General chat window layout */
 .chat-toggle-btn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 50%;
-    padding: 15px;
-    font-size: 24px;
-    cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: 0.3s;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--brand-green); /* Brand green color */
+  color: var(--primary-foreground); /* Primary foreground color */
+  border: none;
+  border-radius: 50%;
+  padding: 15px;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
 }
 
 .chat-toggle-btn.open {
-    background-color: #dc3545; /* Red for closing */
+  background-color: var(--destructive); /* Destructive color for closing */
 }
 
 /* Chat window container */
 .chat-window {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    width: 350px;
-    max-height: 450px;
-    background-color: #fff;
-    border-top-left-radius: 10px;
-    padding: 20px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    z-index: 1000;
-    animation: fadeInUp 0.5s ease-in-out;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 350px;
+  max-height: 450px;
+  background-color: #ffffff; /* Solid white background to remove transparency */
+  border-top-left-radius: var(--radius);
+  padding: 20px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+  animation: fadeInUp 0.5s ease-in-out;
 }
 
 /* Close button inside the chat window */
 .close-chat-btn {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    color: #333;
+  position: absolute;
+  top: 10px; /* Adjusted to be a little lower */
+  right: 10px; /* Aligns with the edge of the window */
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--primary-foreground);
+  font-size: 20px; /* Make the icon size appropriate */
+  z-index: 1001; /* Ensures it stays above other elements */
+}
+
+.close-chat-btn:hover {
+  color: var(--brand-green);
 }
 
 /* Chat messages container */
 .chat-body {
-    flex-grow: 1;
-    overflow-y: auto;
-    padding-bottom: 10px;
-    display: flex;
-    flex-direction: column;  /* Ensure the messages stack vertically */
-    gap: 10px;  /* Add space between messages */
+  flex-grow: 1;
+  overflow-y: auto;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #ffffff; /* Ensure the body is not transparent */
 }
 
 /* Message bubbles */
 .bubble {
-    max-width: 80%;
-    padding: 10px 15px;
-    margin: 5px 0;
-    border-radius: 20px;
-    font-size: 14px;
-    line-height: 1.5;
-    word-wrap: break-word;
-    clear: both;
-    display: block;  /* Make sure bubbles are block elements */
+  max-width: 80%;
+  padding: 10px 15px;
+  margin: 5px 0;
+  border-radius: 20px;
+  font-size: 14px;
+  line-height: 1.5;
+  word-wrap: break-word;
+  clear: both;
+  display: block;
 }
 
 .user {
-    background-color: #007bff;
-    color: white;
-    margin-left: auto;
-    border-bottom-left-radius: 0;
-    border-radius: 20px 20px 0 20px;  /* Make sure the user bubble has rounded corners */
+  background-color: var(--brand-green); /* User bubble with brand green */
+  color: var(--primary-foreground);
+  margin-left: auto;
+  border-bottom-left-radius: 0;
+  border-radius: 20px 20px 0 20px;
 }
 
+/* Fixed assistant message color */
 .assistant {
-    background-color: #f1f1f1;
-    color: #333;
-    margin-right: auto;
-    border-bottom-right-radius: 0;
-    border-radius: 20px 20px 20px 0;  /* Make sure the assistant bubble has rounded corners */
+  background-color: #f0f0f0; /* Light gray background */
+  color: #333333; /* Dark gray text color */
+  margin-right: auto;
+  border-bottom-right-radius: 0;
+  border-radius: 20px 20px 20px 0;
 }
 
 .starter-text {
-    font-size: 18px;
-    color: #555;
-    text-align: center;
+  font-size: 18px;
+  color: var(--muted-foreground);
+  text-align: center;
 }
 
 /* Input form */
 .input-form {
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
-    border-top: 1px solid #e0e0e0;
-    padding-top: 10px;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  border-top: 1px solid var(--border);
+  padding-top: 10px;
 }
 
 .question-box {
-    width: 85%;
-    padding: 12px;
-    border-radius: 30px;
-    border: 1px solid #ccc;
-    margin-right: 10px;
-    font-size: 14px;
-    outline: none;
+  width: 85%;
+  padding: 12px;
+  border-radius: 30px;
+  border: 1px solid var(--brand-green);
+  margin-right: 10px;
+  font-size: 14px;
+  outline: none;
 }
 
 .send-btn {
-    background-color: #007bff;
-    border: none;
-    padding: 12px;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: 0.3s;
+  background-color: var(--brand-green); /* Send button with brand green */
+  border: none;
+  padding: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .send-btn:hover {
-    background-color: #0056b3;
+  background-color: var(--brand-dark); /* Hover effect with dark brand color */
+  color: var(--brand-green)
 }
 
+/* Focus border with brand green */
 input:focus {
-    border-color: #007bff;
+  border-color: var(--brand-green); /* Focus border with brand green */
 }
 
 /* Populated messages with scroll */
 .populated {
-    height: 330px;
-    overflow-y: scroll;
+  height: 330px;
+  overflow-y: scroll;
 }
 
 @keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
 }
+
 /* Prompt Suggestions Row */
 .prompt-suggestion-row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;  /* Space between buttons */
-    justify-content: center;
-    margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 /* Individual Prompt Suggestion Button */
 .prompt-suggestion-row button {
-    background-color: #007bff; /* Blue background */
-    color: white;
-    border: none;
-    border-radius: 30px;  /* Rounded corners for buttons */
-    padding: 12px 20px;
-    font-size: 14px;
-    cursor: pointer;
-    transition: all 0.3s ease;  /* Smooth transition for hover effects */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    text-align: center;
-    min-width: 180px;  /* Set a minimum width for the buttons */
-    max-width: 250px;  /* Limit the maximum width for consistency */
-    word-wrap: break-word;  /* Ensure text wraps inside the button */
+  background-color: var(--brand-green); /* Use brand green */
+  color: var(--primary-foreground);
+  border: none;
+  border-radius: 30px;
+  padding: 12px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  min-width: 180px;
+  max-width: 250px;
+  word-wrap: break-word;
 }
 
 /* Hover effect */
 .prompt-suggestion-row button:hover {
-    background-color: #0056b3; /* Darker blue on hover */
-    transform: translateY(-3px); /* Slight lift effect */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);  /* Enhanced shadow on hover */
+  background-color: var(--brand-green); /* Dark brand color on hover */
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* Focus effect */
+/* Focus effect with brand color */
 .prompt-suggestion-row button:focus {
-    outline: none;
-    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.4); /* Blue outline when focused */
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(145, 195, 125, 0.4); /* Brand green focus effect */
 }
 
 /* Disabled Button */
 .prompt-suggestion-row button:disabled {
-    background-color: #ccc;
-    cursor: not-allowed;
-    box-shadow: none;
+  background-color: #ccc;
+  cursor: not-allowed;
+  box-shadow: none;
 }

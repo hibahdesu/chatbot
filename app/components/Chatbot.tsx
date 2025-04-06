@@ -1,3 +1,4 @@
+//app/components/Chatbot.tsx
 'use client';
 
 import { useChat } from 'ai/react';
@@ -85,7 +86,7 @@ const Chatbot = () => {
                         <section className={noMessages ? "" : "populated"}>
                             {noMessages ? (
                                 <>
-                                    <p className="starter-text">Kaleem</p>
+                                    <p className="starter-text">Touristo</p>
                                     <br />
                                     <PromptSuggestionsRow onPromptClick={handlePrompt} />
                                 </>
@@ -111,7 +112,7 @@ const Chatbot = () => {
                             className="question-box"
                             onChange={handleInputChange}
                             value={input}
-                            placeholder="Ask me some question about Kaleem..."
+                            placeholder="Ask me some question about Tourist in Saudi Arabia.."
                         />
                         
                         {/* Send icon button using React Icons */}

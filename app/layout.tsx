@@ -2,12 +2,12 @@ import './global.css';
 import { ReactNode } from "react"; // Import ReactNode type
 
 export const metadata = {
-    title: "Kaleem",
-    description: "The place to go for all your Kaleem One questions!"
+    title: "Tourist",
+    description: "The place to go for all your Tourist questions!"
 }
 
 interface RootLayoutProps {
-    children: ReactNode; // Explicitly type 'children' as ReactNode
+    children: ReactNode; 
 }
 
 const RootLayout = ({ children }: RootLayoutProps) => {

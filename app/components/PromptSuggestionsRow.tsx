@@ -1,3 +1,4 @@
+//app/components/PromptSuggestionsRow.tsx
 import PromptSuggestionsButton from "./PromptSuggestionButton";
 
 interface PromptSuggestionsRowProps {
@@ -6,9 +7,11 @@ interface PromptSuggestionsRowProps {
 
 const PromptSuggestionsRow = ({ onPromptClick }: PromptSuggestionsRowProps) => {
     const prompts = [
-        "What is Kaleem?",
-        "Who can use Kaleem?",
-        "How does Kaleem work?"
+        "Where can I find a restaurant serving Najdi food?",
+        "Are there any halal restaurants here?",
+        "What are the best restaurants for seafood?",
+        "Are there any festivals in Al-Ula this month?",
+        "¿Puedo usar ropa no tradicional en lugares públicos?"
     ];
 
     return (

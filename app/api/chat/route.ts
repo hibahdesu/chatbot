@@ -1,3 +1,4 @@
+//app/api/chat/route.ts
 import OpenAI from "openai";
 import { DataAPIClient } from "@datastax/astra-db-ts";
 import "dotenv/config";
@@ -88,7 +89,7 @@ export async function POST(req: Request) {
         const template = {
             role: 'system',
             content: `
-            You are an AI assistant called Kaleem. You provide concise and relevant information about the Kaleem platform without unnecessary elaboration or formatting.
+            You are an AI assistant called Touristo. You provide concise and relevant information about the Touristo platform without unnecessary elaboration or formatting.
             Use the context below to answer the user's query. If the context doesn't include the information, tell the user to clarify or inform them that the information isn't available. Be direct and to the point.
             -------------
             START CONTEXT 

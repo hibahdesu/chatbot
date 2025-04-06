@@ -11,7 +11,7 @@ type SimilarityMetric = "cosine" | "euclidean" | "dot_product";
 // Load environment variables
 const {
     ASTRA_DB_NAMESPACE,
-    ASTRA_DB_COLLECTION,
+    ASTRA_DB_COLLECTION = "Tourist",
     ASTRA_DB_API_ENDPOINT,
     ASTRA_DB_APPLICATION_TOKEN,
     OPENAI_API_KEY,
@@ -29,7 +29,7 @@ const openai = new OpenAI({
 });
 
 // Sample data paths
-const kaleemData = [
+const TouristData = [
     'public/faq/faq.txt'
 ];
 
@@ -79,7 +79,7 @@ const loadFileContent = async (filePath: string) => {
 const loadSampleData = async () => {
     const collection = await db.collection(ASTRA_DB_COLLECTION);
 
-    for await (const filePath of kaleemData) {
+    for await (const filePath of TouristData) {
         // Load the file content (only .txt in this case)
         const content = await loadFileContent(filePath);
         if (!content) {

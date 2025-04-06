@@ -1,3 +1,4 @@
+//app/components/Bubble.tsx
 interface Message {
     content: string;
     role: string;
